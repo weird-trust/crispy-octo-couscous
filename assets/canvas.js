@@ -29,27 +29,6 @@ const uniforms = {
   },
 };
 
-// Setting up Shapes and Geometry
-
-const dpi = 64;
-// const geometry = new THREE.SphereGeometry(10, dpi, dpi);
-// const geometry = new THREE.TorusKnotGeometry(8, 1, 5 * dpi, dpi, 2, 5);
-// const geometry = new THREE.ConeGeometry(5, 20, 32);
-// const geometry = new THREE.TetrahedronGeometry(10, 64);
-// const geometry = new THREE.PlaneGeometry(10, 10);
-// const geometry = new THREE.PlaneGeometry(150, 15);
-// const geometry = new THREE.OctahedronGeometry(20, 20);
-
-// const material = new THREE.ShaderMaterial({
-//   uniforms: uniforms,
-//   vertexShader: vert,
-//   fragmentShader: frag,
-//   wireframe: true,
-// });
-// const shape = new THREE.Mesh(geometry, material);
-
-// scene.add(shape);
-
 let aimCamera = new THREE.Vector3(0, 0, 10);
 let currentCamera = new THREE.Vector3(0, 50, 100);
 
@@ -106,35 +85,3 @@ window.addEventListener('resize', function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
-// White Marble
-// './assets/shader-texture/marble/white/posx.jpg',
-// './assets/shader-texture/marble/white/negx.jpg',
-// './assets/shader-texture/marble/white/posy.jpg',
-// './assets/shader-texture/marble/white/negy.jpg',
-// './assets/shader-texture/marble/white/posz.jpg',
-// './assets/shader-texture/marble/white/negz.jpg',
-
-// Black Marble
-// './assets/shader-texture/marble/black/posx.jpg',
-// './assets/shader-texture/marble/black/negx.jpg',
-// './assets/shader-texture/marble/black/posy.jpg',
-// './assets/shader-texture/marble/black/negy.jpg',
-// './assets/shader-texture/marble/black/posz.jpg',
-// './assets/shader-texture/marble/black/negz.jpg',
-
-// Foto/Portrait
-// './assets/shader-texture/foto/portrait/posx.jpg',
-// './assets/shader-texture/foto/portrait/negx.jpg',
-// './assets/shader-texture/foto/portrait/posy.jpg',
-// './assets/shader-texture/foto/portrait/negy.jpg',
-// './assets/shader-texture/foto/portrait/posz.jpg',
-// './assets/shader-texture/foto/portrait/negz.jpg',
-
-// Fork
-// './assets/shader-texture/fork/posx.jpg',
-// './assets/shader-texture/fork/negx.jpg',
-// './assets/shader-texture/fork/posy.jpg',
-// './assets/shader-texture/fork/negy.jpg',
-// './assets/shader-texture/fork/posz.jpg',
-// './assets/shader-texture/fork/negz.jpg',
